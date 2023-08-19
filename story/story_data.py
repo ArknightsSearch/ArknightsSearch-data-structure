@@ -13,7 +13,10 @@ class StoryData(TypedDict):
     # 种类
     type: Literal['Main', 'Activity', 'Rogue', 'Memory']
     # 名称
-    name: dict[str, str]
+    name: dict[
+        Literal['zh_CN', 'ja_JP', 'en_US'],  # 语种
+        str
+    ]
     # 对于Memory是角色名，对于其他是区域id
     zone: str
 
