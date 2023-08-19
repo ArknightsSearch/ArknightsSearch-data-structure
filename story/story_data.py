@@ -17,6 +17,8 @@ class StoryData(TypedDict):
         Literal['zh_CN', 'ja_JP', 'en_US'],  # 语种
         str
     ]
+    # 代号 (可能为空)
+    code: str | None
     # 对于Memory是角色名，对于其他是区域id
     zone: str
 
